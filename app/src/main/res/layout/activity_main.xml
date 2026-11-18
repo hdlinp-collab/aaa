@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/honest_dot"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:background="@drawable/dot"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/expression"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:maxLines="3"
+                android:textColor="@color/text_dim"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="64sp"
+                android:autoSizeMinTextSize="24sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="end"
+                android:maxLines="1"
+                android:minHeight="80dp"
+                android:textColor="@color/text"
+                android:textSize="64sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/bClear"
+            style="@style/CalcButton.Fn"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="C" />
+        <Button
+            android:id="@+id/bDel"
+            style="@style/CalcButton.Fn"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:text="⌫" />
+        <Button
+            android:id="@+id/bPercent"
+            style="@style/CalcButton.Fn"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:text="%" />
+        <Button
+            android:id="@+id/bDiv"
+            style="@style/CalcButton.Op"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:text="÷" />
+        <Button
+            android:id="@+id/b7"
+            style="@style/CalcButton.Num"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="7" />
+        <Button
+            android:id="@+id/b8"
+            style="@style/CalcButton.Num"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:text="8" />
+        <Button
+            android:id="@+id/b9"
+            style="@style/CalcButton.Num"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:text="9" />
+        <Button
+            android:id="@+id/bMul"
+            style="@style/CalcButton.Op"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:text="×" />
+        <Button
+            android:id="@+id/b4"
+            style="@style/CalcButton.Num"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="4" />
+        <Button
+            android:id="@+id/b5"
+            style="@style/CalcButton.Num"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:text="5" />
+        <Button
+            android:id="@+id/b6"
+            style="@style/CalcButton.Num"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:text="6" />
+        <Button
+            android:id="@+id/bSub"
+            style="@style/CalcButton.Op"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:text="−" />
+        <Button
+            android:id="@+id/b1"
+            style="@style/CalcButton.Num"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="1" />
+        <Button
+            android:id="@+id/b2"
+            style="@style/CalcButton.Num"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:text="2" />
+        <Button
+            android:id="@+id/b3"
+            style="@style/CalcButton.Num"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:text="3" />
+        <Button
+            android:id="@+id/bAdd"
+            style="@style/CalcButton.Op"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:text="+" />
+        <Button
+            android:id="@+id/b0"
+            style="@style/CalcButton.Num"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:text="0" />
+        <Button
+            android:id="@+id/bDot"
+            style="@style/CalcButton.Num"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:text="." />
+        <Button
+            android:id="@+id/bEq"
+            style="@style/CalcButton.Eq"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_columnSpan="1"
+            android:text="=" />
+    </GridLayout>
+</LinearLayout>

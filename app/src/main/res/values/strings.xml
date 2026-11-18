@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">計算機</string>
+    <string name="error">錯誤</string>
+    <string name="incomplete">算式不完整</string>
+</resources>
